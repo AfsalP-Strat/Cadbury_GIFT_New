@@ -3,10 +3,14 @@
    &__outer {
       display: flex;
       justify-content: space-between;
+      align-items: center;
       padding: 40px 0px;
    }
    &__title {
       letter-spacing: 3px;
+      @extend %gradient;
+      font-size: 40px;
+      color: #d5a23b;
    }
    &__content {
       display: flex;
@@ -19,13 +23,44 @@
       text-align: center;
       padding: 10px 0 20px;
    }
-   &__left, &__right {
+   &__left {
       width: 20%;
+      img {
+         width: 100%;
+      }
+   }
+   &__right {
+      width: 12%;
       img {
          width: 100%;
       }
    }
    &__cta {
       width: 200px;
+   }
+}
+
+@include mobile {
+   .cg-treat {
+      &__outer {
+         flex-direction: column;
+      }
+      &__left {
+         width: 50%;
+         margin-left: -60px;
+      }
+      &__right {
+         width: 100%;
+         display: flex;
+         justify-content: flex-end;
+         img {
+            width: 30%;
+         }
+      }
+      &__title {
+         color: #fff;
+         -webkit-text-fill-color: #fff;
+         margin-top: -60px;
+      }
    }
 }

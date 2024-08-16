@@ -5,6 +5,11 @@
         // margin: 0 -8px;
     }
 
+    &__wrap {
+        display: flex;
+        // width: calc(25% - 16px);
+    }
+
     &__tile {
         &.cd-hamp {
             padding: 8px;
@@ -71,3 +76,15 @@
 //         }
 //     }
 // }
+
+@include mobile {
+    .cd-occ {
+        &__wrap {
+            flex-direction: column;
+        }
+
+        &__tile {
+            margin: 15px 0px;
+        }
+    }
+}

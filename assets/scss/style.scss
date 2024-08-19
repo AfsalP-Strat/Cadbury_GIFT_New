@@ -11,6 +11,9 @@
 @import 'atoms/btn';
 @import 'atoms/headings';
 @import 'atoms/gradient-btn';
+@import 'atoms/toggle-btn';
+@import 'atoms/plusandminus-icon';
+@import 'atoms/nongradient-btn';
 // molecule
 @import 'molecules/test-card';
 @import 'molecules/banner-tile';
@@ -23,4 +26,5 @@
 @import 'organisms/mobMenu';
 @import 'organisms/inspiration';
 @import 'organisms/treat';
+@import 'organisms/cart-details';
 // pages

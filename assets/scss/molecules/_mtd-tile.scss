@@ -1,0 +1,19 @@
+.cg-mtd {
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: 100%;
+    &__left {
+        width: 50%;
+    }
+    &__img {
+        width: 50%;
+        height: auto;
+        img {
+            width: 100%;
+        }
+    }
+    &__right {
+        width: 50%;
+        background-color: #4B0983;
+    }
+}

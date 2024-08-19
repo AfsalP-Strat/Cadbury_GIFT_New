@@ -1,0 +1,57 @@
+.cg-checkout {
+   max-width: 800px;
+   margin: 0 auto;
+   padding: 20px;
+   &__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #4B0983;
+   }
+   &__logo {
+      width: 20%;
+      img {
+        width: 100%;
+      }
+   }
+   &__line {
+      width: 100%;
+      border-top: 1px solid #4B0983;
+      margin-top: 30px;
+   }
+   &__form {
+      display: flex;
+      justify-content: space-between;
+   }
+   &__formsec {
+      width: 45%;
+      padding: 20px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+   }
+   &__top {
+      background-color: #4B0983;
+      height: 130px;
+      text-align: right;
+      img{
+         width: 15%;
+         transform: translate(-150px, 0px);
+       }
+   }
+   &__footer {
+      text-align: center;
+      margin-top: 20px;
+   }
+   &__footerwrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+   &__footerout {
+      width: 88%;
+      margin: 0 auto;
+      padding: 24px 0px;
+      text-align: right;
+   }
+}

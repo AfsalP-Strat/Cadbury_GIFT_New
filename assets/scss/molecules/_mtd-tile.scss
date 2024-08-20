@@ -4,17 +4,21 @@
     border-radius: 10px;
     width: 50%;
     display: flex;
+
     &__left {
         width: 50%;
     }
+
     &__img {
         width: 100%;
         height: auto;
+
         img {
             width: 100%;
             display: block;
         }
     }
+
     &__right {
         text-align: center;
         padding: 20px 0;
@@ -25,15 +29,55 @@
         align-items: center;
         display: flex;
     }
+
     &__head {
         font-size: 40px;
         color: #fff;
         font-weight: bold;
     }
+
     &__para {
         font-size: 16px;
         color: #fff;
         line-height: 20px;
         padding: 10px 30px;
+    }
+}
+/* tablet-pro */
+@include tablet-pro {
+    .cg-mtd {
+        width: 98%;
+        margin: 10px 10px;
+}
+}
+/* tablet */
+@include tablet {
+   .cg-mtd {
+        width: 95%;
+        margin: 10px 20px;
+
+        &__left {
+            width: 100%;
+        }
+
+        &__right {
+            width: 100%;
+        }
+    }
+}
+/* mobile */
+@include mobile {
+    .cg-mtd {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 10px 18px;
+
+        &__left {
+            width: 100%;
+        }
+        &__right {
+            width: 100%;
+        }
     }
 }

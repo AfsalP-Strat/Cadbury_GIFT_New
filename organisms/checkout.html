@@ -15,37 +15,44 @@
   </head>
   <body>
     <!-- body content start -->
-    <div class="cg-checkout__header">
-      <a href="#">←</a>
-      <div class="cg-checkout__logo">
-         <a href="#"><img src="../assets/images/cadbury-logo.png" alt="cadbury-logo"></a>
-      </div>
-      <a href="#">?</a>
-  </div>
-  <div class="cg-checkout">
-      <h2>WELCOME TO OUR SECURE CHECKOUT</h2>
-      <div class="cg-checkout__form">
-          <div class="cg-checkout__formsec">
-              <h3>ALREADY REGISTERED?</h3>
-              <form>
-                  <label for="email">Email address:</label>
-                  <input type="email" id="email" name="email" required>
-                  <label for="password">Password:</label>   
-
-                  <input type="password" id="password" name="password" required>
-                  <label for="remember">Remember me:</label>
-                  <input type="checkbox" id="remember" name="remember">                                     
-                  <a href="#" class="cd-btn">SIGN IN AND CHECKOUT</a>
-                  <a href="#">Forgotten your password?</a>
-              </form>
-          </div>
-          <div class="cg-checkout__formsec">
-              <h3>DON'T HAVE AN ACCOUNT?</h3>
-              <p>You can save your details for next time by creating an account later.</p>
-              <button type="button">CONTINUE AS GUEST</button>
-          </div>
-      </div>
-  </div>
+    <div class="cg-checkout__headerout">
+        <div class="content-wrapper">
+            <div class="cg-checkout__header">
+                <a href="#"><img src="../assets/images/left-arrow.png" alt="cadbury-logo"></a>
+                <div class="cg-checkout__logo">
+                    <a href="#"><img src="../assets/images/cadbury-logo.png" alt="cadbury-logo"></a>
+                </div>
+                <a href="#" class="cg-checkout__lockimg"><img src="../assets/images/lock.png" alt="cadbury-logo"></a>
+            </div>
+        </div>
+    </div>
+    <div class="content-wrapper">
+        <div class="cg-checkout">
+            <h1 class="cg-checkout__head">WELCOME TO OUR SECURE CHECKOUT</h1>
+            <div class="cg-checkout__formwrap">
+                <div class="cg-checkout__formsec">
+                    <h3 class="cg-checkout__subhead">ALREADY REGISTERED?</h3>
+                    <form class="cg-checkout__form">
+                        <label for="email">Email address <span style="color: #cc0000;">*</span></label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="password">Password <span style="color: #cc0000;">*</span></label>
+                        <input type="password" id="password" name="password" required>
+                        <p class="cg-checkout__remindtxt"><strong>Reminder: </strong>Passwords are 8-12 characters with one lowercase letter, one uppercase letter and one number</p>  
+                        <div class="cg-checkout__robot">
+                            <img width="250" height="auto" src="../assets/images/imnotrobot.png" alt="">
+                        </div>                              
+                        <a href="#" class="cd-btn">SIGN IN AND CHECKOUT</a>
+                        <a href="#" class="cg-checkout__forgot">Forgotten your password?</a>
+                    </form>
+                </div>
+                <div class="cg-checkout__formsec">
+                    <h3 class="cg-checkout__subhead">DON'T HAVE AN<br>ACCOUNT?</h3>
+                    <p class="cg-checkout__remindtxt cg-checkout__txtcenter">You can save your details for next time by creating an account later.</p>
+                    <a href="#"><button type="button" class="cg-checkout__button">CONTINUE AS GUEST</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
   <div class="cg-footer">
    <div class="cg-checkout__top">
        <div class="content-wrapper">
@@ -53,32 +60,14 @@
        </div>
    </div>
    <div class="content-wrapper">
-       <div class="cg-footer__outer">
+       <div class="cg-checkout__ftouter">
            <div class="cg-checkout__footerwrap">
-               <div class="accordion-item">
-                   <h2 class="accordion-header" id="headingOne">
-                       <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                           data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                           NEED HELP?
-                       </button>
-                   </h2>
-                   <div id="collapseOne" class="accordion-collapse collapse show"
-                       aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                       <div class="accordion-body">
-                           <ul class="cg-footer__list">
-                               <li class="cg-footer__list-item">
-                                   <a href="#" class="cg-footer__list-link">0371 664 2373</a>
-                               </li>
-                               <li class="cg-footer__list-item">
-                                   <a href="#" class="cg-footer__list-item" style="text-decoration: underline;">info@cadburygiftsdirect.co.uk</a>
-                               </li>
-                               <li class="cg-footer__list-item">
-                                   <a href="#" class="cg-footer__list-item">Help</a>
-                               </li>
-                           </ul>
-                       </div>
-                   </div>
-               </div>
+                <div class="cg-checkout__helptxt">
+                    <h2>NEED HELP?</h2>
+                    <a href="#" class="cg-footer__list-link">0371 664 2373</a>
+                    <a href="#" class="cg-footer__list-item">info@cadburygiftsdirect.co.uk</a>
+                    <a href="#" class="cg-footer__list-item">Help</a>
+                </div>
                <div class="cg-footer__last-paymt">
                   <div class="cg-footer__last-paymt-head"><img src="../assets/images/lock-icn.png"> Secure Payment</div>
                   <div class="cg-footer__last-paymt-icns">

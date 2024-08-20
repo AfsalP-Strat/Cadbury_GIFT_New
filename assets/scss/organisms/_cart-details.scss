@@ -34,6 +34,11 @@
         color: #4B0983;
         text-decoration: underline;
         margin-bottom: 8px;
+
+        &:hover {
+            color: #4B0983;
+            text-decoration: underline;
+        }
     }
 
     .cd-tglbutton {
@@ -59,7 +64,7 @@
     }
 
     &__vattxt {
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 400;
         color: #4B0983;
         margin-right: 8px;
@@ -103,17 +108,99 @@
         align-items: center;
     }
 
+    &__payapp {
+        width: 20%;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__paydesc {
+        font-size: 16px;
+        color: #4B0983;
+        margin-left: 17px;
+        width: 65%;
+
+        a {
+            text-decoration: underline;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
     &__delivrydts {
         text-align: center;
+        border: 1px solid #E4DAEC;
+        background-color: #E4DAEC;
+        border-radius: 12px;
+        padding: 30px 60px;
+        margin: 20px 0px 15px 0px;
+    }
+
+    &__delivrydesca {
+        color: #4B0983;
+        font-size: 16px;
+       
+        span {
+            font-weight: 600;
+        }
+    }
+
+    &__delivrydescb {
+        color: #4B0983;
+        font-size: 16px;
+
+        span {
+            color: #D61949;
+            font-weight: 600;
+        }
     }
 
     &__persnlmsg {
         display: flex;
         align-items: center;
+
+        img {
+            width: 18%;
+        }
+    }
+
+    &__checkoutmsg {
+        font-size: 16px;
+        color: #4B0983;
+        margin-left: 15px;
     }
 
     &__rewards {
         display: flex;
         align-items: center;
+
+        img {
+            width: 18%;
+        }
+    }
+
+    &__rwrddesca {
+        font-size: 16px;
+        color: #4B0983;
+        margin-left: 15px;
+        width: 85%;
+        span {
+            font-weight: 600;
+        }
+    }
+
+    &__rwrddescb {
+        font-size: 16px;
+        color: #4B0983;
+        text-decoration: underline;
+        margin-left: 15px;
+        &:hover {
+            color: #4B0983;
+            text-decoration: underline;
+        }
     }
 }

@@ -143,6 +143,44 @@ $(".main-banner").slick({
     // instead of a settings object
   ],
 });
+// CHOCOLATE HAMPERS slider ==============================
+$(document).ready(function(){
+  var $slider = $('.cg-slider--gh-sdr');
+  var $currentSlide = $('#current-slide');
+  var $totalSlides = $('#total-slides');
+  $slider.on('init reInit afterChange', function(event, slick, currentSlide, nextSlide){
+    var i = (currentSlide ? currentSlide : 0) + 1;
+    $currentSlide.text(i);
+    $totalSlides.text(slick.slideCount);
+  });
+
+  $slider.slick({
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    infinite: false,
+    prevArrow: $('.slick-prev'),
+    nextArrow: $('.slick-next'),
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ],
+  });
+});
 
 // GRADUATION GIFTS slider ==============================
 $(document).ready(function(){

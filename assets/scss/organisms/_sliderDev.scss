@@ -120,3 +120,29 @@
 //     transform: translate3d(206px, 0, 0) !important;
 //   }
 }
+@include mobile-tablet{
+    .cg-slider{
+        padding: 30px 10px;
+        &__nav{
+            display: none;
+        }
+        .cd-title{
+            width: 100%;
+            padding: 30px 0px 0;
+        }
+        .cd-title__head{
+            padding: 50px 0 0;
+            margin-bottom: 15px;
+            width: 100%;
+        }
+        .slick-track {
+            padding: 15px 0px;
+        }
+        // .slick-slider {
+        //     padding: 10px;
+        // }
+        .cd-occ__tile.cd-hamp{
+            margin: 0px 10px;
+        }
+    }
+}

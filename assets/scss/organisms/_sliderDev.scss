@@ -115,6 +115,16 @@
         color: #4b0983;
         font-weight: 700;
     }
+    &__ftr{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        padding: 15px;
+        .cd-btn{
+            min-width: 200px;
+            text-transform: uppercase;
+        }
+    }
     /* Initial transform for the entire track */
 //     .initial-translate .slick-track {
 //     transform: translate3d(206px, 0, 0) !important;

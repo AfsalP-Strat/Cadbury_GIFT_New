@@ -156,10 +156,9 @@ $(document).ready(function(){
   });
 
   $slider.slick({
-    infinite: false,
     slidesToShow: 6,
-    infinite: true,
     slidesToScroll: 1,
+    infinite: false,
     prevArrow: $('.slick-prev'),
     nextArrow: $('.slick-next')
   });

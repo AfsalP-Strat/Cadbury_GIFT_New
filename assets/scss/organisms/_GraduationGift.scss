@@ -1,6 +1,21 @@
 .cg-slider{
-    &--gg{
+    &--ctm{
         position: relative;
+        .slick-prev.slick-arrow:before{
+            display: none !important;
+        }
+        .slick-next.slick-arrow:before{
+            display: none;
+        }
+        .slick-prev.slick-arrow{
+            transform: translate(0px, 0px) rotate(180deg) !important;
+        }
+        .slick-arrow{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
     }
     .cd-occ__tile{
         overflow: visible !important;

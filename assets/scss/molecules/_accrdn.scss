@@ -1,0 +1,52 @@
+.cg-accrdn {
+    padding: 40px;
+    .accordion-button:not(.collapsed) {
+        color: #4B0983;
+        background-color: transparent;
+        box-shadow: none;
+    }
+    .accordion-button:focus {
+        z-index: 3;
+        outline: 0;
+        box-shadow: none;
+    }
+    .accordion-button {
+        color: #4B0983;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .accordion-button[aria-expanded=false] {
+        &::after {
+            content: "";
+            position: absolute;
+            right: 24px;
+            width: 28px;
+            height: 28px;
+            top: 35%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url("data:image/svg+xml,%3Csvg width='50' height='50' viewBox='0 0 50 50' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='25' cy='25' r='24' transform='matrix(0 1 1 0 0 0)' fill='white' stroke='%23A91E25' stroke-width='2'/%3E%3Cpath d='M35.0002 21L25.0002 31L15.0002 21' stroke='%23A91E25' stroke-width='4.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+        }
+    }
+    .accordion-button[aria-expanded=true] {
+        &::after {
+            content: "";
+            position: absolute;
+            right: 24px;
+            width: 28px;
+            height: 28px;
+            top: 35%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url("data:image/svg+xml,%3Csvg width='50' height='50' viewBox='0 0 50 50' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='25' cy='25' r='24' transform='matrix(0 1 1 0 0 0)' fill='white' stroke='%23A91E25' stroke-width='2'/%3E%3Cpath d='M35.0002 21L25.0002 31L15.0002 21' stroke='%23A91E25' stroke-width='4.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+        }
+    }
+    .accordion-item {
+        border-bottom: 2px solid #4B0983;
+        &:last-child {
+            border-bottom: 2px solid #4B0983;
+        }
+    }
+}

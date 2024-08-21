@@ -36,6 +36,7 @@ const backLinks = document.querySelectorAll(".cg-menuList__bacLink");
 let menuStack = [];
 
 // Open main menu
+if(menuIcon){
 menuIcon.addEventListener("click", function () {
   menu.style.right = "0";
   menuIcon.style.display = "none";
@@ -43,8 +44,10 @@ menuIcon.addEventListener("click", function () {
   // Clear the stack when opening the main menu
   menuStack = [];
 });
+}
 
 // Close main menu
+if(closeIcon){
 closeIcon.addEventListener("click", function () {
   menu.style.right = "-100%";
   closeIcon.style.display = "none";
@@ -57,8 +60,9 @@ closeIcon.addEventListener("click", function () {
   // Clear the stack when closing the main menu
   menuStack = [];
 });
-
+}
 // Open submenu
+if(submenuLinks){
 submenuLinks.forEach((link) => {
   link.addEventListener("click", function (event) {
     event.preventDefault();
@@ -80,7 +84,7 @@ submenuLinks.forEach((link) => {
     menuStack.push(target);
   });
 });
-
+}
 // Go back to the previous menu
 backLinks.forEach((link) => {
   link.addEventListener("click", function (event) {
@@ -138,4 +142,25 @@ $(".main-banner").slick({
     // settings: "unslick"
     // instead of a settings object
   ],
+});
+
+// GRADUATION GIFTS slider ==============================
+$(document).ready(function(){
+  var $slider = $('.cg-slider--gg-sdr');
+  var $currentSlide = $('#current-slide');
+  var $totalSlides = $('#total-slides');
+  $slider.on('init reInit afterChange', function(event, slick, currentSlide, nextSlide){
+    var i = (currentSlide ? currentSlide : 0) + 1;
+    $currentSlide.text(i);
+    $totalSlides.text(slick.slideCount);
+  });
+
+  $slider.slick({
+    infinite: false,
+    slidesToShow: 6,
+    infinite: true,
+    slidesToScroll: 1,
+    prevArrow: $('.slick-prev'),
+    nextArrow: $('.slick-next')
+  });
 });

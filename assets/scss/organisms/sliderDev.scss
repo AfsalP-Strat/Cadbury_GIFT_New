@@ -1,0 +1,24 @@
+// SLIDER DEVE
+.cg-slider{
+    padding: 40px 0;
+    &__heading{
+        position: relative;
+    }
+    .home-heading__sub{
+        width: 100%;
+        margin: 0px 0px 45px 0;
+    }
+    .widget-product-carousel-title{
+        margin-top: -30px;
+        margin-bottom: 40px;
+    }
+    .slick-prev{
+        right: calc(5% + 80px);
+    }
+    .slick-next{
+        right: 5%;
+    }
+    .slide-indicator{
+        right: calc(5% + 40px);
+    }
+}

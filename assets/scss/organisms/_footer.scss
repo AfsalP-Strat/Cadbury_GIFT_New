@@ -214,6 +214,10 @@
         flex-direction: column;
       }
       &-paymt{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
         &-head{
           display: block;
           color: #4B0983;

@@ -164,12 +164,16 @@
       }
       &__footerout {
          margin-right: 10px;
+         text-align: center;
       }
       &__top {
          img{
             width: 32%;
             transform: translate(-40px, 20px);
           }
+      }
+      &__helptxt {
+         margin: 16px;
       }
    }
 }

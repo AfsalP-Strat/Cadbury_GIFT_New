@@ -157,3 +157,11 @@
         }
     }
 }
+@include mobile{
+    .cg-slider{
+        &__ftr{
+            display: none;
+        }
+
+    }
+}

@@ -1,0 +1,52 @@
+.cg-accrdn {
+    padding: 40px;
+    .accordion-button:not(.collapsed) {
+        color: #4B0983;
+        background-color: transparent;
+        box-shadow: none;
+    }
+    .accordion-button:focus {
+        z-index: 3;
+        outline: 0;
+        box-shadow: none;
+    }
+    .accordion-button {
+        color: #4B0983;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .accordion-button[aria-expanded=false] {
+        &::after {
+            content: "";
+            position: absolute;
+            right: 24px;
+            width: 28px;
+            height: 28px;
+            bottom: 25%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url("../images/plus-icn.png");
+        }
+    }
+    .accordion-button[aria-expanded=true] {
+        &::after {
+            content: "";
+            position: absolute;
+            right: 24px;
+            width: 28px;
+            height: 4px;
+            bottom: 46%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url("../images/minus-icn.png");
+        }
+    }
+    .accordion-item {
+        border-bottom: 2px solid #4B0983;
+        &:last-child {
+            border-bottom: 2px solid #4B0983;
+        }
+    }
+}

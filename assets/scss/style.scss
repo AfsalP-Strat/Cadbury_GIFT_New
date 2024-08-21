@@ -11,10 +11,15 @@
 @import 'atoms/btn';
 @import 'atoms/headings';
 @import 'atoms/gradient-btn';
+@import 'atoms/toggle-btn';
+@import 'atoms/nongradient-btn';
 // molecule
 @import 'molecules/test-card';
 @import 'molecules/banner-tile';
 @import 'molecules/carousel-tile';
+@import 'molecules/accrdn';
+@import 'molecules/mtd-tile';
+@import 'molecules/title';
 // organisms
 @import 'organisms/header';
 @import 'organisms/header-top';
@@ -25,4 +30,6 @@
 @import 'organisms/treat';
 @import 'organisms/sliderDev.scss';
 @import 'organisms/GraduationGift';
+@import 'organisms/cart-details';
+@import 'organisms/checkout';
 // pages

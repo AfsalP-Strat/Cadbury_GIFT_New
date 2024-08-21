@@ -1,0 +1,38 @@
+.cd-starbtn {
+    background-color: #ffffff;
+    border: 1px solid #4B0983;
+    font-size: 30px;
+    font-weight: 600; 
+    color: #4B0983;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 16px;
+    display: block;
+    text-align: center;
+    transition: 0.3s;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+        transition: 0.3s;
+        background-color: #4B0983;
+        color: #ffffff;
+        .cd-star svg {
+            stroke: #ffffff !important;
+        }
+    }
+    
+    .cd-star {
+        display: flex;
+        margin-right: 10px;
+
+        svg {
+            fill: #ffffff;
+            stroke: #4B0983;
+            // &:hover {
+            //     stroke: #ffffff !important;
+            // }
+        }
+    }
+}

@@ -1,0 +1,60 @@
+/*=============================== Dev Support - Sidebar START ==============================*/
+.cg-sidebarMain{
+    .filter__options-item{
+        border: none;
+    }
+    .filter__options-title{
+        color: #4B0983;
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+    .filter__options-content {
+        padding-left: 0;
+        padding-right: 0px;
+        a{
+            color: #4B0983;
+            position: relative;
+            display: block;
+            padding-right: 30px;
+        }
+    }
+    .styled-checkbox input:checked+label:not(.selected):not(.active):before{
+        display: none;
+    }
+    .styled-checkbox label:not(.active):not(.selected):before{
+        display: none;
+    }
+    .control{
+        display: none;
+    }
+    .filter__options-count {
+        color: #4B0983;
+        padding-right: 0px;
+    }
+    .filter .actions {
+        text-align: left;
+        margin-top: 10px;
+    }
+    .filter__options-title[aria-expanded=true]:after {
+        content: "";
+        background-image: url(https://stratagile-projects.s3.ap-southeast-1.amazonaws.com/project-jordenen/arrow_sideBar.svg);
+        background-repeat: no-repeat;
+        width: 15px;
+        height: 9px;
+        position: absolute;
+        top: 5px;
+        right: 0;
+        transform: rotate(180deg);
+    }
+    .filter__options-title:not([aria-expanded=true]):after {
+        content: "";
+        background-image: url(https://stratagile-projects.s3.ap-southeast-1.amazonaws.com/project-jordenen/arrow_sideBar.svg);
+        background-repeat: no-repeat;
+        width: 15px;
+        height: 9px;
+        position: absolute;
+        top: 5px;
+        right: 0;
+    }
+}
+/*=============================== Dev Support - Sidebar END ==============================*/

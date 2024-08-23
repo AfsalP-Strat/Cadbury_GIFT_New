@@ -1,0 +1,41 @@
+/*=============================== Dev Support - Product List START ==============================*/
+.cg-products{
+    padding-top: 0px;
+    .product-item{
+        padding: 12px 10px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        margin: 0 5px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .product-items:not(.swiper__wrapper) {
+        grid-gap: 15px;
+    }
+    .price-box .price{
+        color: #4B0983;
+        font-size: 16px;
+    }
+    .product-items .product-item-name:not(:hover){
+        color: #000;
+    }
+    .product-item-name{
+        font-size: 12px;
+    }
+    .product-items .product-item-name:hover, .product-items .product-item-name a:hover {
+        text-decoration: none;
+        color: #4B0983;
+    }
+    .special-price+.old-price .price{
+        color: #757575;
+    }
+    .product-items{
+        .product-item-details{
+            padding: 15px 0px 0px;
+        }
+    }
+    .product-items .product-item.layout-1 .price-box, .product-items .product-item:not([class*=layout]) .price-box {
+        padding: 10px 0 0;
+    }
+
+}
+/*=============================== Dev Support - Product List END ==============================*/

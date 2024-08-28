@@ -1,0 +1,35 @@
+.opc-progress-bar {
+&.cg-checkout {
+    // &::before {
+    //     display: none;
+    // }
+    &::before {
+        width: 50%;
+        border-radius: 50px;
+        top: -6px;
+    }
+}
+}
+
+.opc-wrapper {
+    &.cg-checkout {
+        .step-title {
+            color: #4B0983;
+        }
+        .control {
+            input, select {
+                border: 1px solid #4B0983;
+                border-radius: 6px;
+                background: transparent;
+            }
+        }
+    } 
+}
+
+.opc-block-summary {
+    &.cg-checkout {
+        .title {
+            color: #4B0983;
+        }
+    }
+}

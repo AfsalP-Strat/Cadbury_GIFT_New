@@ -1,0 +1,158 @@
+/*=============================== Dev Support - Sidebar START ==============================*/
+.cg-sidebarMain .filter__options-item {
+  border: none;
+}
+.cg-sidebarMain .filter__options-title {
+  color: #4B0983;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.cg-sidebarMain .filter__options-content {
+  padding-left: 0;
+  padding-right: 0px;
+}
+.cg-sidebarMain .filter__options-content a {
+  color: #4B0983;
+  position: relative;
+  display: block;
+  padding-right: 30px;
+}
+.cg-sidebarMain .styled-checkbox input:checked + label:not(.selected):not(.active):before {
+  display: none;
+}
+.cg-sidebarMain .styled-checkbox label:not(.active):not(.selected):before {
+  display: none;
+}
+.cg-sidebarMain .control {
+  display: none;
+}
+.cg-sidebarMain .filter__options-count {
+  color: #4B0983;
+  padding-right: 0px;
+}
+.cg-sidebarMain .filter .actions {
+  text-align: left;
+  margin-top: 10px;
+}
+.cg-sidebarMain .filter__options-title[aria-expanded=true]:after {
+  content: "";
+  background-image: url(https://stratagile-projects.s3.ap-southeast-1.amazonaws.com/project-jordenen/arrow_sideBar.svg);
+  background-repeat: no-repeat;
+  width: 15px;
+  height: 9px;
+  position: absolute;
+  top: 5px;
+  right: 0;
+  transform: rotate(180deg);
+}
+.cg-sidebarMain .filter__options-title:not([aria-expanded=true]):after {
+  content: "";
+  background-image: url(https://stratagile-projects.s3.ap-southeast-1.amazonaws.com/project-jordenen/arrow_sideBar.svg);
+  background-repeat: no-repeat;
+  width: 15px;
+  height: 9px;
+  position: absolute;
+  top: 5px;
+  right: 0;
+}
+
+/*=============================== Dev Support - Sidebar END ==============================*/
+/*=============================== Dev Support - Product List START ==============================*/
+.cg-products {
+  padding-top: 0px;
+}
+.cg-products .product-item {
+  padding: 12px 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  margin: 0 5px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.cg-products .product-items:not(.swiper__wrapper) {
+  grid-gap: 15px;
+}
+.cg-products .price-box .price {
+  color: #4B0983;
+  font-size: 16px;
+}
+.cg-products .product-items .product-item-name:not(:hover) {
+  color: #000;
+}
+.cg-products .product-item-name {
+  font-size: 12px;
+}
+.cg-products .product-items .product-item-name:hover, .cg-products .product-items .product-item-name a:hover {
+  text-decoration: none;
+  color: #4B0983;
+}
+.cg-products .special-price + .old-price .price {
+  color: #757575;
+}
+.cg-products .product-items .product-item-details {
+  padding: 15px 0px 0px;
+}
+.cg-products .product-items .product-item.layout-1 .price-box, .cg-products .product-items .product-item:not([class*=layout]) .price-box {
+  padding: 10px 0 0;
+}
+
+/*=============================== Dev Support - Product List END ==============================*/
+.detailed.cg-details .data.items .data.item.title:not(.active):after, .detailed.cg-details .data.items .data.item.title.active:after {
+  color: #4B0983;
+  font-weight: bold;
+}
+.detailed.cg-details .switch {
+  color: #4B0983;
+}
+.detailed.cg-details .data.items .data.item.title {
+  border-bottom: 1px solid #4B0983;
+}
+
+.page-bottom.cg-hampers img {
+  border-radius: 25px !important;
+  overflow: hidden !important;
+}
+
+.cg-login .sum-login__wrapper > div {
+  border: 1px solid #4B0983;
+  border-radius: 6px;
+}
+.cg-login .control {
+  border: 1px solid #4B0983;
+  border-radius: 4px;
+}
+.cg-login .control input {
+  border: 0;
+  background-color: transparent;
+}
+.cg-login .action.primary:not([disabled]):not(.disabled):not(:hover):not(.ghost) {
+  background: #4B0983;
+}
+.cg-login .sum-login__heading {
+  color: #4B0983;
+}
+.cg-login .action.secondary {
+  border-radius: 30px;
+  border: 1px solid #4B0983;
+}
+.cg-login .action.secondary span {
+  color: #4B0983;
+}
+
+.opc-progress-bar.cg-checkout::before {
+  width: 50%;
+  border-radius: 50px;
+  top: -6px;
+}
+
+.opc-wrapper.cg-checkout .step-title {
+  color: #4B0983;
+}
+.opc-wrapper.cg-checkout .control input, .opc-wrapper.cg-checkout .control select {
+  border: 1px solid #4B0983;
+  border-radius: 6px;
+  background: transparent;
+}
+
+.opc-block-summary.cg-checkout .title {
+  color: #4B0983;
+}

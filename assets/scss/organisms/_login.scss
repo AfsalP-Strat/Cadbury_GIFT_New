@@ -1,0 +1,27 @@
+    .cg-login {
+        .sum-login__wrapper>div {
+            border: 1px solid #4B0983;
+            border-radius: 6px;
+        } 
+        .control {
+            border: 1px solid #4B0983;
+            border-radius: 4px;
+            input {
+               border: 0;
+               background-color: transparent;
+            }
+        }
+        .action.primary:not([disabled]):not(.disabled):not(:hover):not(.ghost) {
+            background: #4B0983;
+        }
+        .sum-login__heading {
+            color: #4B0983;
+        }
+        .action.secondary {
+            border-radius: 30px;
+            border: 1px solid #4B0983;
+            span {
+                color: #4B0983;
+            }
+        }
+    }

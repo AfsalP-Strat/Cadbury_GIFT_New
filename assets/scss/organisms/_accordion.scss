@@ -1,0 +1,24 @@
+.detailed.cg-details {
+    .data.items .data.item.title:not(.active):after, .data.items .data.item.title.active:after {
+        color: #4B0983;
+        font-weight: bold;
+    }
+    .switch {
+        color: #4B0983;
+    }
+    .data.items .data.item.title {
+        border-bottom: 1px solid #4B0983;
+    }
+}
+
+// Make their day 
+.page-bottom.cg-hampers {
+    img {
+        border-radius: 25px !important;
+        overflow: hidden !important;
+    }
+    //  img {
+    //     border-radius: 25px;
+    //     overflow: hidden;
+    // }
+}

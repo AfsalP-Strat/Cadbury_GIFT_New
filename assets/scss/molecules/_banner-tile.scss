@@ -8,6 +8,7 @@
 }
 
 .cd-bannertile {
+    padding: 24px 0;
     &__title {   
         @extend %gradient;
         padding-bottom: 24px;

@@ -143,3 +143,9 @@
     }
   }
 }
+
+@include mobile-tablet {
+  .cg-MainNav {
+    display: none;
+  }
+}

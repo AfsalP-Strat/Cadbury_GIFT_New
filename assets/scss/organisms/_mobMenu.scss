@@ -1,14 +1,13 @@
 
 @media only screen and (min-device-width: 1025px) {
-    .cg-mobNav{
-        display:none;
+    .mob_header{
+        display: none;
     }
 }
-.cg-mobNav {
-    display: none;
-}
-
 @media only screen and (max-device-width: 1024px) {
+    .desk_header{
+        display:none;
+    }
     #cg-HamburgerMenu {
         width: 26px;
         img {

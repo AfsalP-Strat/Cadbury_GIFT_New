@@ -1,11 +1,11 @@
 
-@media only screen and (min-device-width: 765px) {
+@media only screen and (min-device-width: 769px) {
     .cg-mobNav{
         display: none;
     }
 }
 
-@media only screen and (max-device-width: 764px) {
+@media only screen and (max-device-width: 768px) {
     #cg-HamburgerMenu {
         width: 26px;
         img {
@@ -44,7 +44,7 @@
                 width: 100%;
             }
         }
-        &__search{ 
+        &__search{
             width: 25px;
             img {
                 width: 100%;

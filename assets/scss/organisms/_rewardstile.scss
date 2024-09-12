@@ -3,7 +3,8 @@
 
     &__wrap {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: flex-start;
+        margin-left: 13%;
     }
 
     &__container {
@@ -13,9 +14,10 @@
         width: 35%;
         height: 400px;
         border-radius: 15px;
+        margin: 0 24px;
 
         &--upward {
-            transform: translateY(-45px);
+           margin-top: 50px;
         }
     }
 

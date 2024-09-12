@@ -32,8 +32,38 @@ body {
     padding: 32px 0;
  }
 
+ .cg-mobNav {
+    display: block;
+}
 
+@media only screen and (max-width: 1024px) {
+    .header.content .minisearch, .header.content .minicart__wrapper {
+        -webkit-box-flex: 0 0 11%;
+        -moz-box-flex: 0 0 11%;
+        -webkit-flex: 0 0 11%;
+        -ms-flex: 0 0 11%;
+        flex: 0 0 11%;
+    }
+}
 
+@media only screen and (max-width: 1024px) {
+    .minisearch .header-dropdown__block:not([aria-hidden=false]) {
+        display: none;
+    }
+}
+
+//  @media only screen and (min-device-width: 1025px) {
+//     .cg-mobNav{
+//         display:none;
+//     }
+// }
+
+// tablet pro 
+@media (min-width: 1024px) and (max-width: 1199px) {
+    .cg-mobNav {
+        display: block;
+    }
+  }
 
 //  tablet 
 @media (min-width: 768px) and (max-width: 1023px) {
